@@ -42,11 +42,11 @@ class TrainingPipeline:
             raise CustomException(e, sys)
 
     def start_model_training(self,
-                             x_train: np.array,
-                             y_train: np.array,
-                             x_test: np.array,
-                             y_test: np.array,
-                             preprocessor_path: pathlib.Path):
+                            x_train: np.array,
+                            y_train: np.array,
+                            x_test: np.array,
+                            y_test: np.array,
+                            preprocessor_path: pathlib.Path):
         try:
             model_trainer = ModelTrainer()
             model_score = model_trainer.initiate_model_trainer(

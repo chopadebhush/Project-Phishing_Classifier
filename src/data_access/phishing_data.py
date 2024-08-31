@@ -11,7 +11,7 @@ import os
 
 class PhisingData:
     def __init__(self,
-                 database_name: str):
+                database_name: str):
         """
         """
         try:
